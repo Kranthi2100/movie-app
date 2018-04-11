@@ -5,7 +5,6 @@ This application focuses on providing quality recommendations to the user based 
 * [Guide to Data Mining](https://guidetodatamining.com)  
   
 **Main tools**:  
-* [Python 3](https://www.python.org/)
 * [Node JS](https://nodejs.org/)
 * [Jade](http://jade-lang.com/) 
   
@@ -17,4 +16,5 @@ This application focuses on providing quality recommendations to the user based 
 * [MovieLens 100K](https://grouplens.org/datasets/movielens/100k/)  
   
 **NodeJS App Setup Instructions**:  
-*TODO: step by step instructions*
+ * yarn install 
+ * yarn start
