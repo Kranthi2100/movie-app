@@ -16,5 +16,5 @@ This application focuses on providing quality recommendations to the user based 
 * [MovieLens 100K](https://grouplens.org/datasets/movielens/100k/)  
   
 **NodeJS App Setup Instructions**:  
- * yarn install 
- * yarn start
+* yarn install 
+* yarn start 
