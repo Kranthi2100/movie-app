@@ -1,8 +1,10 @@
 const request = require("request-promise")
 
+MOVIE_API_HOST = process.env.MOVIE_API_HOST
+
 const createUser = (user) => {
   return new Promise((resolve, reject) => {
-    const uri = "http://localhost:5000/users/create/"
+    const uri = `${MOVIE_API_HOST}/users/create/`
     request({ 
       uri, 
       method: "post",
@@ -19,7 +21,7 @@ const createUser = (user) => {
 
 const getUserByGoogle = (id) => {
   return new Promise((resolve, reject) => {
-    const uri = "http://localhost:5000/users/get-google/"
+    const uri = `${MOVIE_API_HOST}/users/get-google/`
     request({ 
       uri, 
       method: "post",
@@ -35,7 +37,7 @@ const getUserByGoogle = (id) => {
 
 const getUserById = (id) => {
   return new Promise((resolve, reject) => {
-    const uri = "http://localhost:5000/users/get-id/"
+    const uri = `${MOVIE_API_HOST}/users/get-id/`
     request({ 
       uri, 
       method: "post",

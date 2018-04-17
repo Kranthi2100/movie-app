@@ -4,8 +4,13 @@ const movieSelect = (item) => {
   selector.setAttribute('select', val);
 }
 
+if(window.location.hostname === 'localhost')
+  MOVIE_API_HOST = 'localhost:5000'
+else
+  MOVIE_API_HOST = 'https://rest-movie2100.herokuapp.com'
+
 const init = () => {
-  fetch('http://127.0.0.1:5000/movies/list/345345')
+  fetch(`${MOVIE_API_HOST}/movies/list/345345`)
     .then(function (response) {
       return response.json();
     })
@@ -33,7 +38,7 @@ const init = () => {
 }
 
 const findMore = () =>{
-  fetch('http://127.0.0.1:5000/movies/list/2')
+  fetch(`${MOVIE_API_HOST}/movies/list/2`)
     .then(function (response) {
       return response.json();
     })
