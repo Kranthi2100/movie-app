@@ -5,7 +5,7 @@ const movieSelect = (item) => {
 }
 
 if(window.location.hostname === 'localhost')
-  MOVIE_API_HOST = 'localhost:5000'
+  MOVIE_API_HOST = 'http://localhost:5000'
 else
   MOVIE_API_HOST = 'https://rest-movie2100.herokuapp.com'
 
