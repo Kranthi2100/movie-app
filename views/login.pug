@@ -1,9 +1,10 @@
 html
   head 
-    //- link(
-    //-   rel= "stylesheet",
-    //-   href="../styles/style.css" 
-    //- )
+    include includes/bootstap_head.pug
+    link(
+      rel= "stylesheet",
+      href="../styles/login.css" 
+    )
     //- script(
     //-   src="../scripts/script.js"
     //-   type="text/javascript"
@@ -12,4 +13,5 @@ html
     a(
       href = '/auth/google'
     ) login
-                        
+                          
+    include includes/required_files.pug

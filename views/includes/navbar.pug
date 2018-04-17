@@ -1,0 +1,20 @@
+nav.navbar.navbar-expand-lg.navbar-dark.ctm-bg-dark.ctm.bl-y
+  a(href='#').navbar-brand App
+  button.navbar-toggler(
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation"
+  )
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse#navbarSupportedContent.justify-content-end
+    ul.navbar-nav
+      li.nav-item.my-auto.mr-lg-3
+        a.nav-link(href='/auth/logout') logout
+      li.nav-item
+        span.navbar-text hello, #{user.username}
+          img.mx-4.rounded-circle(
+            src = user.thumbnail
+          )

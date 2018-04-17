@@ -1,5 +1,6 @@
 html
   head 
+    include includes/bootstap_head.pug
     link(
       rel= "stylesheet",
       href="../styles/style.css" 
@@ -8,17 +9,13 @@ html
       src="../scripts/script.js"
       type="text/javascript"
     )
-  body( onload = 'init()')
-    header
-      h1#heading App
-      p welcome #{user.username}
-      img(
-        src=user.thumbnail
-      )
+  body( onload = 'init()')      
+    include includes/navbar.pug
     div#container
       h1 Select.  
       button(
         onClick = "findMore()"
       ) Find More
       div#movie-list
-                        
+    
+    include includes/required_files.pug

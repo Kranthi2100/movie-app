@@ -1,20 +1,21 @@
 *{
-  box-sizing:border-box;
-  background-color:white;
   font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
 }
 
-header{
-  margin: -8px -8px 0px -8px; 
+/* 
+  
+*/
+
+.ctm-bl-y{
   border-left: 20px solid #ebe70c;
 }
 
-#heading{
+.ctm-bg-dark{
+  background-color:#20013d;
+}
+
+.ctm-bg-light{
   color:#ebe70c;
-  padding: 15px 3px 15px 3%;
-  margin: 0px 0px 0px 0px;
-  display: block;
-  background-color:#20013d;    
 }
 
 #container{
@@ -22,11 +23,8 @@ header{
   padding-top: 2%;
 }
 
-h1{
-  animation: 370ms slide-left;
-}
-
 #container h1{
+  animation: 370ms slide-left;
   display: inline-block;
   color: #20013d;
   padding: 15px 15px 15px 15px;
