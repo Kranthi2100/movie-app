@@ -24,6 +24,10 @@ app.use(passport.session())
 app.use('/dashboard', dashboardRoute)
 app.use('/auth', authRoute)
 
+app.get('/', (req, res) => {
+  res.redirect('/auth/login')
+})
+
 app.listen(process.env.PORT || 3000, () => {
     console.log('server is now running!');
 })
