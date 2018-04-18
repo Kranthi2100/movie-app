@@ -10,6 +10,11 @@ else
   MOVIE_API_HOST = 'https://rest-movie2100.herokuapp.com'
 
 const init = () => {
+  setTimeout(()=>{
+    init2()
+  },2000);
+}
+const init2 = () => {
   fetch(`${MOVIE_API_HOST}/movies/list/345345`)
     .then(function (response) {
       return response.json();
@@ -22,13 +27,13 @@ const init = () => {
       for (let index = 0; index < count; index++) {
         movie = movies[index];
         //div.card.col-sm-5.col-md-3.mb-2.mx-1#movie-list
-        content += `<div class='col-sm-6 col-md-3 mb-2'
+        content += `<div class='col-sm-6 col-md-4 col-lg-3 mb-2'
                                 onClick='movieSelect(this)'
                                 id='movieSelector:${movie.movieId}'
                                 select='false'
                     >
                       <div class="card mr-2">
-                          <img class='card-image-top skl-image' src=${movie.image} />
+                          <img class='card-image-top' src=${movie.image} />
                            <div class='card-body'>
                             <p class = 'card-text text-center'>${movie.title}</p>
                            </div>
@@ -54,14 +59,14 @@ const findRecommended = () =>{
       for (let index = 0; index < count; index++) {
         movie = movies[index];
         content += `<div class='movie-item'
-          onClick='movieSelect(this)' 
-          id='movieSelector:${movie.movieId}'
-          select='false'>
-            <img class='image' src=${movie.image} />
-            <div class='content'>
-              <p class = 'name'>${movie.title}</p>
-            </div>
-          </div>`;
+                                onClick='movieSelect(this)' 
+                                id='movieSelector:${movie.movieId}'
+                                select='false'>
+                      <img class='image' src=${movie.image} />
+                      <div class='content'>
+                        <p class = 'name'>${movie.title}</p>
+                      </div>
+                    </div>`;
       }
       item.innerHTML = content;
     }).catch(function () {

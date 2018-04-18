@@ -23,6 +23,8 @@
 .skeleton{
   min-height: 300px;
   min-width:  182;
+  padding: 0.5em;
+  margin: auto;
 }
 
 .skl-bg {
@@ -31,15 +33,20 @@
 
 .skl-image{
   width: 182px !important; 
-  height: 268px !important;
-  margin:auto;
+  height: 128px !important;
+  margin:2em auto 1.2em auto;
 }
 
 .skl-text{
   width: 182px;
   height: 25px;
-  margin:auto;
-  margin-top: 5px;
+  margin-bottom: 0.2em;
+  /* margin:0em auto 1em auto; */
+}
+
+.skl-text-half{
+  width: 91px;
+  /* margin:0em auto 1em 2.4em; */
 }
 
 /* @media (max-width: 978px) {
