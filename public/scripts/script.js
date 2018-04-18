@@ -41,7 +41,7 @@ const init = () => {
     })
 }
 
-const findMore = () =>{
+const findRecommended = () =>{
   fetch(`${MOVIE_API_HOST}/movies/list/2`)
     .then(function (response) {
       return response.json();
