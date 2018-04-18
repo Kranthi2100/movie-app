@@ -12,11 +12,11 @@ html
     )
   body( onload = 'init()')      
     include includes/navbar.pug
-    div#container
-      h1 Select.  
-      button(
-        onClick = "findMore()"
-      ) Find More
-      div#movie-list
-    
+    .container.mt-2 
+      .row.justify-content-center#movie-list
+         each i in [1,2,3,4,5,6,7,8,9,10,11,12]
+          .col-sm-6.col-md-3.mb-2
+            .card.skeleton
+              div.skl-image.skl-bg
+              div.skl-text.skl-bg
     include includes/required_files.pug

@@ -27,3 +27,4 @@ app.use('/auth', authRoute)
 app.listen(process.env.PORT || 3000, () => {
     console.log('server is now running!');
 })
+

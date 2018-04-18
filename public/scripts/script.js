@@ -21,15 +21,19 @@ const init = () => {
       let content = '';
       for (let index = 0; index < count; index++) {
         movie = movies[index];
-        content += `<div class='movie-item'
-          onClick='movieSelect(this)' 
-          id='movieSelector:${movie.movieId}'
-          select='false'>
-            <img class='image' src=${movie.image} />
-            <div class='content'>
-              <p class = 'name'>${movie.title}</p>
-            </div>
-          </div>`;
+        //div.card.col-sm-5.col-md-3.mb-2.mx-1#movie-list
+        content += `<div class='col-sm-6 col-md-3 mb-2'
+                                onClick='movieSelect(this)'
+                                id='movieSelector:${movie.movieId}'
+                                select='false'
+                    >
+                      <div class="card mr-2">
+                          <img class='card-image-top skl-image' src=${movie.image} />
+                           <div class='card-body'>
+                            <p class = 'card-text text-center'>${movie.title}</p>
+                           </div>
+                      </div>
+                    </div>`;
       }
       item.innerHTML = content;
     }).catch(function (err) {
