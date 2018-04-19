@@ -83,14 +83,8 @@
   content:"";
   background:radial-gradient(circle,white,transparent);
   background-size:400%;
-  animation: 1s skl-effect-half ease infinite;
+  animation: 1s skl-effect ease infinite;
 }
-
-@keyframes skl-effect-half{
-  0%{margin-left:-100%}
-  75%{margin-left:100%}
-  100%{margin-left:100%}
-} 
 
 @keyframes skl-effect{
     0%{margin-left:-100%}
