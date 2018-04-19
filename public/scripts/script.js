@@ -10,6 +10,7 @@ else
   MOVIE_API_HOST = 'https://rest-movie2100.herokuapp.com'
 
 const init = () => {
+  return;
   fetch(`${MOVIE_API_HOST}/movies/list/345345`)
     .then(function (response) {
       return response.json();

@@ -64,7 +64,7 @@
   height: 25px;
   content:"";
   background:radial-gradient(circle,white,transparent);
-  background-size:200%;
+  background-size:400%;
   animation: 1s skl-effect ease infinite;
 }
 
@@ -73,16 +73,26 @@
   /* margin:0em auto 1em 2.4em; */
 }
 
+.container{
+  max-width: default;
+}
+
 .skl-text-half:before{
   position:absolute;
   width: 91px;
   content:"";
   background:radial-gradient(circle,white,transparent);
-  background-size:200%;
-  animation: 1s skl-effect ease infinite;
+  background-size:400%;
+  animation: 1s skl-effect-half ease infinite;
 }
 
-@keyframes skl-effect {
+@keyframes skl-effect-half{
+  0%{margin-left:-100%}
+  75%{margin-left:100%}
+  100%{margin-left:100%}
+} 
+
+@keyframes skl-effect{
     0%{margin-left:-100%}
     100%{margin-left:100%}
 }
